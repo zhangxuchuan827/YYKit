@@ -7,7 +7,7 @@
 //
 
 #import "YYModelExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark Simple Object Example

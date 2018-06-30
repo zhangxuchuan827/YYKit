@@ -7,7 +7,7 @@
 //
 
 #import "YYImageExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import <ImageIO/ImageIO.h>
 #import <WebP/demux.h>
 

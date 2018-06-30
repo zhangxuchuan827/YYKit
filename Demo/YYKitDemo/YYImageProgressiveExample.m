@@ -7,7 +7,7 @@
 //
 
 #import "YYImageProgressiveExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYImageProgressiveExample () {
     UIImageView *_imageView;

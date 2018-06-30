@@ -7,7 +7,7 @@
 //
 
 #import "YYImageBenchmark.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import <ImageIO/ImageIO.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "YYBPGCoder.h"

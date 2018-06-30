@@ -7,7 +7,7 @@
 //
 
 #import "YYRootViewController.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYRootViewController ()
 @property (nonatomic, strong) NSMutableArray *titles;

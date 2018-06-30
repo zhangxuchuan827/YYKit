@@ -7,7 +7,7 @@
 //
 
 #import "YYControl.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @implementation YYControl {
     UIImage *_image;

@@ -9,7 +9,7 @@
 #import "WBEmoticonInputView.h"
 #import "WBStatusHelper.h"
 #import "WBModel.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 #define kViewHeight 216
 #define kToolbarHeight 37

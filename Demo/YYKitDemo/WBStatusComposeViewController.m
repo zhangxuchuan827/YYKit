@@ -11,7 +11,7 @@
 #import "WBStatusComposeTextParser.h"
 #import "WBStatusHelper.h"
 #import "WBStatusLayout.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 #define kToolbarHeight (35 + 46)
 

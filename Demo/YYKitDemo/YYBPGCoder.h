@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 ibireme. All rights reserved.
 //
 
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 /*
  BPG image format:

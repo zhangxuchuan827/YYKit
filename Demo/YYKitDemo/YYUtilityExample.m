@@ -7,7 +7,7 @@
 //
 
 #import "YYUtilityExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYUtilityExample()
 @property (nonatomic, strong) NSMutableArray *titles;

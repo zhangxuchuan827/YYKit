@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface T1Helper : NSObject
 

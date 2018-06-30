@@ -7,7 +7,7 @@
 //
 
 #import "YYTextAttachmentExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import "YYTextExampleHelper.h"
 #import "YYImageExampleHelper.h"
 

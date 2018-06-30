@@ -7,7 +7,7 @@
 //
 
 #import "YYTextBindingExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 
 @interface YYTextExampleEmailBindingParser :NSObject <YYTextParser>

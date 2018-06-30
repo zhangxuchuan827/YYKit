@@ -7,7 +7,7 @@
 //
 
 #import "YYFeedListExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYFeedListExample ()
 @property (nonatomic, strong) NSMutableArray *titles;

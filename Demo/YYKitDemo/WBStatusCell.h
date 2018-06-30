@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import "WBStatusLayout.h"
 #import "YYTableViewCell.h"
 @class WBStatusCell;

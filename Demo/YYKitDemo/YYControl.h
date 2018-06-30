@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYControl : UIView
 @property (nonatomic, strong) UIImage *image;

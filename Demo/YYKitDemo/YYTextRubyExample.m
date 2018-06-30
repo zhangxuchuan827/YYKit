@@ -7,7 +7,7 @@
 //
 
 #import "YYTextRubyExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 /*
  Ruby Annotation

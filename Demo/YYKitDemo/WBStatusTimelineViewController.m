@@ -7,7 +7,7 @@
 //
 
 #import "WBStatusTimelineViewController.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import "WBModel.h"
 #import "WBStatusLayout.h"
 #import "WBStatusCell.h"

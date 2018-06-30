@@ -7,7 +7,7 @@
 //
 
 #import "YYSimpleWebViewController.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYSimpleWebViewController () <UIWebViewDelegate>
 @property (nonatomic, strong) UIWebView *webView;

@@ -7,7 +7,7 @@
 //
 
 #import "YYTextCopyPasteExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 @interface YYTextCopyPasteExample ()<YYTextViewDelegate>
 @property (nonatomic, assign) YYTextView *textView;

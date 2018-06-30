@@ -7,7 +7,7 @@
 //
 
 #import "YYTextAsyncExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import "YYFPSLabel.h"
 
 #define kCellHeight 34
