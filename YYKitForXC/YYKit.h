@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-#if __has_include(<YYKit/YYKit.h>)
+#if __has_include(<YYKitForXC/YYKit.h>)
 
 FOUNDATION_EXPORT double YYKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
@@ -19,7 +19,6 @@ FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 #import <YYKit/YYKitMacro.h>
 #import <YYKit/NSObject+YYAdd.h>
 #import <YYKit/NSObject+YYAddForKVO.h>
-#import <YYKit/NSObject+YYAddForARC.h>
 #import <YYKit/NSString+YYAdd.h>
 #import <YYKit/NSNumber+YYAdd.h>
 #import <YYKit/NSData+YYAdd.h>
