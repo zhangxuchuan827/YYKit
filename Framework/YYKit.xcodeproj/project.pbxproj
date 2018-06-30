@@ -166,7 +166,7 @@
 		D9B2620A1BEF527A0038C00A /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261661BEF52730038C00A /* YYTransaction.m */; };
 		D9B2620B1BEF527A0038C00A /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261671BEF52730038C00A /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9B2620C1BEF527A0038C00A /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B261681BEF52730038C00A /* YYWeakProxy.m */; };
-		D9B2620D1BEF527A0038C00A /* YYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261691BEF52730038C00A /* YYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9B2620D1BEF527A0038C00A /* YYKitForXC.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B261691BEF52730038C00A /* YYKitForXC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9B2620F1BEF53070038C00A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B2620E1BEF53070038C00A /* SystemConfiguration.framework */; };
 		D9B262111BEF530C0038C00A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B262101BEF530C0038C00A /* Accelerate.framework */; };
 		D9B262131BEF53110038C00A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B262121BEF53110038C00A /* AssetsLibrary.framework */; };
@@ -344,7 +344,7 @@
 		D9B261661BEF52730038C00A /* YYTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTransaction.m; sourceTree = "<group>"; };
 		D9B261671BEF52730038C00A /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		D9B261681BEF52730038C00A /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
-		D9B261691BEF52730038C00A /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
+		D9B261691BEF52730038C00A /* YYKitForXC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitForXC.h; sourceTree = "<group>"; };
 		D9B2620E1BEF53070038C00A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D9B262101BEF530C0038C00A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D9B262121BEF53110038C00A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -425,7 +425,7 @@
 		D9B260B91BEF52730038C00A /* YYKitForXC */ = {
 			isa = PBXGroup;
 			children = (
-				D9B261691BEF52730038C00A /* YYKit.h */,
+				D9B261691BEF52730038C00A /* YYKitForXC.h */,
 				D9B260BA1BEF52730038C00A /* Base */,
 				D9B261201BEF52730038C00A /* Model */,
 				D9B260FB1BEF52730038C00A /* Cache */,
@@ -726,7 +726,7 @@
 				D9B261E11BEF52760038C00A /* NSParagraphStyle+YYText.h in Headers */,
 				D9B261DB1BEF52760038C00A /* YYTextMagnifier.h in Headers */,
 				D9B261801BEF52730038C00A /* NSString+YYAdd.h in Headers */,
-				D9B2620D1BEF527A0038C00A /* YYKit.h in Headers */,
+				D9B2620D1BEF527A0038C00A /* YYKitForXC.h in Headers */,
 				D9B261C91BEF52750038C00A /* NSObject+YYModel.h in Headers */,
 				D9B261A41BEF52740038C00A /* UIView+YYAdd.h in Headers */,
 				D9B261B91BEF52740038C00A /* YYAnimatedImageView.h in Headers */,

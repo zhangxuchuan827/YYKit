@@ -1,5 +1,5 @@
 //
-//  YYKit.h
+//  YYKitForXC.h
 //  YYKit <https://github.com/ibireme/YYKit>
 //
 //  Created by ibireme on 13/3/30.
@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-#if __has_include(<YYKitForXC/YYKit.h>)
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
 
 FOUNDATION_EXPORT double YYKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
