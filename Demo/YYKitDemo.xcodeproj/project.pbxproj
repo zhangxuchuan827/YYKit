@@ -775,7 +775,7 @@
 		D97484C719CAAD2900F46DE1 = {
 			isa = PBXGroup;
 			children = (
-				D9B25F9F1BEE79370038C00A /* YYKit */,
+				D9B25F9F1BEE79370038C00A /* YYKitForXC */,
 				D97484D219CAAD2900F46DE1 /* YYKitDemo */,
 				D974852319CAB3AE00F46DE1 /* Frameworks */,
 				D97484D119CAAD2900F46DE1 /* Products */,
@@ -854,7 +854,7 @@
 			name = "API Dump";
 			sourceTree = "<group>";
 		};
-		D9B25F9F1BEE79370038C00A /* YYKit */ = {
+		D9B25F9F1BEE79370038C00A /* YYKitForXC */ = {
 			isa = PBXGroup;
 			children = (
 				D9B2604F1BEE79370038C00A /* YYKit.h */,
@@ -865,8 +865,8 @@
 				D9B2600B1BEE79370038C00A /* Text */,
 				D9B260361BEE79370038C00A /* Utility */,
 			);
-			name = YYKit;
-			path = ../YYKit;
+			name = YYKitForXC;
+			path = ../YYKitForXC;
 			sourceTree = "<group>";
 		};
 		D9B25FA01BEE79370038C00A /* Base */ = {
@@ -1499,7 +1499,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1527,7 +1527,7 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";

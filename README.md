@@ -9,6 +9,18 @@ YYKit
 [![Build Status](https://travis-ci.org/ibireme/YYKit.svg?branch=master)](https://travis-ci.org/ibireme/YYKit)
 
 
+
+
+```
+pod 'YYKitForXC'
+
+```
+
+
+
+
+
+
 YYKit is a collection of iOS components.
 
 It's so huge that I split it into several independent components:

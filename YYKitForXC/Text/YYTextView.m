@@ -225,7 +225,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
     }
     if (_selectedTextRange.end.offset == _innerText.length) {
         [_typingAttributesHolder.attributes enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
-            [text setAttribute:key value:value range:NSMakeRange(_innerText.length, 1)];
+            [text setAttribute:key value:value range:NSMakeRange(self->_innerText.length, 1)];
         }];
     }
     [self willChangeValueForKey:@"textLayout"];
@@ -311,7 +311,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
          I can't find the reason. Here's a workaround.
          */
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.02 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[YYTextEffectWindow sharedWindow] showSelectionDot:_selectionView];
+            [[YYTextEffectWindow sharedWindow] showSelectionDot:self->_selectionView];
         });
     }
     [[YYTextEffectWindow sharedWindow] showSelectionDot:_selectionView];
@@ -611,10 +611,10 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
     if (self.isFirstResponder || _containerView.isFirstResponder) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             UIMenuController *menu = [UIMenuController sharedMenuController];
-            [menu setTargetRect:CGRectStandardize(rect) inView:_selectionView];
+            [menu setTargetRect:CGRectStandardize(rect) inView:self->_selectionView];
             [menu update];
-            if (!_state.showingMenu || !menu.menuVisible) {
-                _state.showingMenu = YES;
+            if (!self->_state.showingMenu || !menu.menuVisible) {
+                self->_state.showingMenu = YES;
                 [menu setMenuVisible:YES animated:YES];
             }
         });
@@ -644,7 +644,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
         NSMutableAttributedString *hiText = (_delectedText ? _delectedText : _innerText).mutableCopy;
         NSDictionary *newAttrs = _highlight.attributes;
         [newAttrs enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
-            [hiText setAttribute:key value:value range:_highlightRange];
+            [hiText setAttribute:key value:value range:self->_highlightRange];
         }];
         _highlightLayout = [YYTextLayout layoutWithContainer:_innerContainer text:hiText];
         if (!_highlightLayout) _highlight = nil;
@@ -753,8 +753,8 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
         _insetModifiedByKeyboard = NO;
         if (animated) {
             [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseOut  animations:^{
-                [super setContentInset:_originalContentInset];
-                [super setScrollIndicatorInsets:_originalScrollIndicatorInsets];
+                [super setContentInset:self->_originalContentInset];
+                [super setScrollIndicatorInsets:self->_originalScrollIndicatorInsets];
             } completion:NULL];
         } else {
             [super setContentInset:_originalContentInset];
@@ -768,12 +768,12 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
     if (!self.isFirstResponder) return;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if ([YYTextKeyboardManager defaultManager].keyboardVisible) {
-            [self _scrollRangeToVisible:_selectedTextRange];
+            [self _scrollRangeToVisible:self->_selectedTextRange];
         } else {
             [self _restoreInsetsAnimated:YES];
         }
         [self _updateMagnifier];
-        if (_state.showingMenu) {
+        if (self->_state.showingMenu) {
             [self _showMenu];
         }
     });
@@ -957,15 +957,15 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
             [UIView animateWithDuration:kAutoScrollMinimumDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear animations:^{
                 [self setContentOffset:offset];
             } completion:^(BOOL finished) {
-                if (_state.trackingTouch) {
-                    if (_state.trackingGrabber) {
+                if (self->_state.trackingTouch) {
+                    if (self->_state.trackingGrabber) {
                         [self _showMagnifierRanged];
                         [self _updateTextRangeByTrackingGrabber];
-                    } else if (_state.trackingPreSelect) {
+                    } else if (self->_state.trackingPreSelect) {
                         [self _showMagnifierCaret];
                         [self _updateTextRangeByTrackingPreSelect];
-                    } else if (_state.trackingCaret) {
-                        if (_markedTextRange) {
+                    } else if (self->_state.trackingCaret) {
+                        if (self->_markedTextRange) {
                             [self _showMagnifierRanged];
                         } else {
                             [self _showMagnifierCaret];
@@ -1531,12 +1531,12 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
             case NSTextCheckingTypeLink:
             case NSTextCheckingTypePhoneNumber: {
                 detected = YES;
-                if (_highlightTextAttributes.count) {
-                    YYTextHighlight *highlight = [YYTextHighlight highlightWithAttributes:_highlightTextAttributes];
+                if (self->_highlightTextAttributes.count) {
+                    YYTextHighlight *highlight = [YYTextHighlight highlightWithAttributes:self->_highlightTextAttributes];
                     [text setTextHighlight:highlight range:result.range];
                 }
-                if (_linkTextAttributes.count) {
-                    [_linkTextAttributes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+                if (self->_linkTextAttributes.count) {
+                    [self->_linkTextAttributes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
                         [text setAttribute:key value:obj range:result.range];
                     }];
                 }
@@ -2117,7 +2117,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
     [self _setTypingAttributes:typingAttributes];
     _state.typingAttributesOnce = YES;
     [typingAttributes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [_typingAttributesHolder setAttribute:key value:obj];
+        [self->_typingAttributesHolder setAttribute:key value:obj];
     }];
     [self _commitUpdate];
 }
@@ -3397,7 +3397,7 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
     } else if (applyTypingAttributes) {
         NSRange newRange = NSMakeRange(range.asRange.location, text.length);
         [_typingAttributesHolder.attributes enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-            [_innerText setAttribute:key value:obj range:newRange];
+            [self->_innerText setAttribute:key value:obj range:newRange];
         }];
     }
     [self _parseText];

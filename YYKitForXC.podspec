@@ -1,20 +1,20 @@
 Pod::Spec.new do |s|
-  s.name         = 'YYKit'
-  s.summary      = 'A collection of iOS components.'
-  s.version      = '1.0.9'
+  s.name         = 'YYKitForXC'
+  s.summary      = 'Copy And Correction From YYKit'
+  s.version      = '1.0.0'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
   s.social_media_url = 'http://blog.ibireme.com'
-  s.homepage     = 'https://github.com/ibireme/YYKit'
+  s.homepage     = 'https://github.com/zhangxuchuan827/YYKit'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => 'https://github.com/ibireme/YYKit.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKit.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'YYKit/**/*.{h,m}'
-  s.public_header_files = 'YYKit/**/*.{h}'
+  s.source_files = 'YYKitForXC/**/*.{h,m}'
+  s.public_header_files = 'YYKitForXC/**/*.{h}'
 
-  non_arc_files = 'YYKit/Base/Foundation/NSObject+YYAddForARC.{h,m}', 'YYKit/Base/Foundation/NSThread+YYAdd.{h,m}'
+  non_arc_files = 'YYKitForXC/Base/Foundation/NSObject+YYAddForARC.{h,m}', 'YYKitForXC/Base/Foundation/NSThread+YYAdd.{h,m}'
   s.ios.exclude_files = non_arc_files
   s.subspec 'no-arc' do |sna|
     sna.requires_arc = false

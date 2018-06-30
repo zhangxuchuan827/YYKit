@@ -212,7 +212,7 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
         NSMutableAttributedString *hiText = _innerText.mutableCopy;
         NSDictionary *newAttrs = _highlight.attributes;
         [newAttrs enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
-            [hiText setAttribute:key value:value range:_highlightRange];
+            [hiText setAttribute:key value:value range:self->_highlightRange];
         }];
         _highlightLayout = [YYTextLayout layoutWithContainer:_innerContainer text:hiText];
         _shrinkHighlightLayout = [YYLabel _shrinkLayoutWithLayout:_highlightLayout];
