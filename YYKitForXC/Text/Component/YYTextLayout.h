@@ -12,10 +12,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYTextDebugOption.h>
-#import <YYKit/YYTextLine.h>
-#import <YYKit/YYTextInput.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYTextDebugOption.h>
+#import <YYKitForXC/YYTextLine.h>
+#import <YYKitForXC/YYTextInput.h>
 #else
 #import "YYTextDebugOption.h"
 #import "YYTextLine.h"

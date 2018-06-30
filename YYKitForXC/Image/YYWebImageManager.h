@@ -11,8 +11,8 @@
 
 #import <UIKit/UIKit.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYImageCache.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYImageCache.h>
 #else
 #import "YYImageCache.h"
 #endif

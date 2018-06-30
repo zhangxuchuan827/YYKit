@@ -7,7 +7,7 @@
 //
 
 #import "YYTextTagExample.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 #import "YYTextExampleHelper.h"
 
 @interface YYTextTagExample () <YYTextViewDelegate>

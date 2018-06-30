@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
   s.social_media_url = 'http://blog.ibireme.com'
-  s.homepage     = 'https://github.com/zhangxuchuan827/YYKit'
+  s.homepage     = 'https://github.com/zhangxuchuan827/YYKitForXC'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKit.git', :tag => s.version}
+  s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKitForXC.git', :tag => s.version}
   
   s.requires_arc = true
   s.source_files = "YYKitForXC/**/*.{h,m}"

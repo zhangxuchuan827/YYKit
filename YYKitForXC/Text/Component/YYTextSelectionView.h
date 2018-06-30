@@ -11,9 +11,9 @@
 
 #import <UIKit/UIKit.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYTextAttribute.h>
-#import <YYKit/YYTextInput.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYTextAttribute.h>
+#import <YYKitForXC/YYTextInput.h>
 #else
 #import "YYTextAttribute.h"
 #import "YYTextInput.h"

@@ -12,9 +12,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYTextAttribute.h>
-#import <YYKit/YYTextRubyAnnotation.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYTextAttribute.h>
+#import <YYKitForXC/YYTextRubyAnnotation.h>
 #else
 #import "YYTextAttribute.h"
 #import "YYTextRubyAnnotation.h"

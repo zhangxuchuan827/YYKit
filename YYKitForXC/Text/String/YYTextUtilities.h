@@ -12,8 +12,8 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYKitMacro.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYKitMacro.h>
 #else
 #import "YYKitMacro.h"
 #endif

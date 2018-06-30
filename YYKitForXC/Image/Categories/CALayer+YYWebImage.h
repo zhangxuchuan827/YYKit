@@ -12,8 +12,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYWebImageManager.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYWebImageManager.h>
 #else
 #import "YYWebImageManager.h"
 #endif

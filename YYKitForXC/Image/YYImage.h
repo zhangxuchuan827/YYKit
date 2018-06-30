@@ -11,9 +11,9 @@
 
 #import <UIKit/UIKit.h>
 
-#if __has_include(<YYKit/YYKit.h>)
-#import <YYKit/YYAnimatedImageView.h>
-#import <YYKit/YYImageCoder.h>
+#if __has_include(<YYKitForXC/YYKitForXC.h>)
+#import <YYKitForXC/YYAnimatedImageView.h>
+#import <YYKitForXC/YYImageCoder.h>
 #else
 #import "YYAnimatedImageView.h"
 #import "YYImageCoder.h"

@@ -487,7 +487,7 @@
 		D9B2604C1BEE79370038C00A /* YYTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTransaction.m; sourceTree = "<group>"; };
 		D9B2604D1BEE79370038C00A /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		D9B2604E1BEE79370038C00A /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
-		D9B2604F1BEE79370038C00A /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
+		D9B2604F1BEE79370038C00A /* YYKitForXC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitForXC.h; sourceTree = "<group>"; };
 		D9B263B81BEF66010038C00A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D9C7863D1AB7C66D001317AD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D9C7863F1AB7C69E001317AD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -851,7 +851,7 @@
 		D9B25F9F1BEE79370038C00A /* YYKitForXC */ = {
 			isa = PBXGroup;
 			children = (
-				D9B2604F1BEE79370038C00A /* YYKit.h */,
+				D9B2604F1BEE79370038C00A /* YYKitForXC.h */,
 				D9B25FA01BEE79370038C00A /* Base */,
 				D9B260061BEE79370038C00A /* Model */,
 				D9B25FE11BEE79370038C00A /* Cache */,
@@ -1470,6 +1470,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = AMN7NX2CM5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",
@@ -1499,6 +1500,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = AMN7NX2CM5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/**",

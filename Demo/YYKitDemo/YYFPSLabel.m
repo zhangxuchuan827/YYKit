@@ -7,7 +7,7 @@
 //
 
 #import "YYFPSLabel.h"
-#import "YYKit.h"
+#import "YYKitForXC.h"
 
 #define kSize CGSizeMake(55, 20)
 
