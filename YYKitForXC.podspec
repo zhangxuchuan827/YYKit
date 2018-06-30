@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKit.git', :tag => s.version}
   
   s.requires_arc = true
-  s.source_files = 'YYKitForXC/**/*.{h,m}'
+  s.source_files = "YYKitForXC/**/*.{h,m}"
   #s.public_header_files = 'YYKitForXC/**/*.{h}'
 
   s.libraries = 'z', 'sqlite3'
