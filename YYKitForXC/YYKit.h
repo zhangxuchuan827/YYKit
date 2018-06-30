@@ -29,7 +29,6 @@ FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 #import <YYKit/NSKeyedUnarchiver+YYAdd.h>
 #import <YYKit/NSTimer+YYAdd.h>
 #import <YYKit/NSBundle+YYAdd.h>
-#import <YYKit/NSThread+YYAdd.h>
 
 #import <YYKit/UIColor+YYAdd.h>
 #import <YYKit/UIImage+YYAdd.h>
