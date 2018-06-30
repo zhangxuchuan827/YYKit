@@ -8,18 +8,11 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/zhangxuchuan827/YYKit'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKit.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/zhangxuchuan827/YYKit.git', :tag => s.version}
   
   s.requires_arc = true
   s.source_files = 'YYKitForXC/**/*.{h,m}'
-  s.public_header_files = 'YYKitForXC/**/*.{h}'
-
-  non_arc_files = 'YYKitForXC/Base/Foundation/NSObject+YYAddForARC.{h,m}', 'YYKitForXC/Base/Foundation/NSThread+YYAdd.{h,m}'
-  s.ios.exclude_files = non_arc_files
-  s.subspec 'no-arc' do |sna|
-    sna.requires_arc = false
-    sna.source_files = non_arc_files
-  end
+  #s.public_header_files = 'YYKitForXC/**/*.{h}'
 
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
