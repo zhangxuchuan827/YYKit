@@ -110,7 +110,6 @@ FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 #import "YYKitMacro.h"
 #import "NSObject+YYAdd.h"
 #import "NSObject+YYAddForKVO.h"
-#import "NSObject+YYAddForARC.h"
 #import "NSString+YYAdd.h"
 #import "NSNumber+YYAdd.h"
 #import "NSData+YYAdd.h"
@@ -121,7 +120,6 @@ FOUNDATION_EXPORT const unsigned char YYKitVersionString[];
 #import "NSKeyedUnarchiver+YYAdd.h"
 #import "NSTimer+YYAdd.h"
 #import "NSBundle+YYAdd.h"
-#import "NSThread+YYAdd.h"
 
 #import "UIColor+YYAdd.h"
 #import "UIImage+YYAdd.h"

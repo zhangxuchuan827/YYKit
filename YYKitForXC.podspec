@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'YYKitForXC'
   s.summary      = 'Copy And Correction From YYKit'
-  s.version      = '1.0.0'
+  s.version      = '3.0.0'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
   s.social_media_url = 'http://blog.ibireme.com'
